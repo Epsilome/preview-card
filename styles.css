@@ -1,0 +1,193 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: grid;
+    place-content: center;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-rows: 140px 146px 90px;
+    width: 350px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.grid-row-1 {
+    background-image: url("/images/bg-pattern-card.svg");
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.victor {
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50%;
+    border-color: white;
+    left: 50%;
+    top: 38%;
+    transform: translate(-50%, -50%);
+}
+
+.grid-row-2 {
+    place-self: center;
+}
+
+.followers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+p {
+    color: hsl(0, 0%, 59%);
+
+}
+
+.age {
+    margin-left: 10px;
+    color: hsl(0, 0%, 59%);
+}
+
+.name {
+    margin-top: 50px;
+}
+
+.city {
+    color: hsl(0, 0%, 59%);
+    margin-left: 50px;
+}
+
+hr {
+    left: 0%;
+    right: 0%;
+    top: 75%;
+    color: hsl(0, 0%, 59%);
+    position: absolute;
+}
+
+.caption {
+    align-self: flex-start;
+}
+
+.numbers {
+    align-self: flex-end;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-grid {
+        width: 326px;
+    }
+}
+
+.top-pic {
+    position: absolute;
+    width: 622px;
+    height: 621px;
+    left: -190px;
+    top: -340px;
+    opacity: 0.5;
+}
+
+.bot-pic {
+    position: absolute;
+    width: 622px;
+    height: 621px;
+    left: 190px;
+    top: 370.97px;
+    opacity: 0.5;
+}
+
+@media only screen and (min-width: 768px) {
+    .top-pic {
+        position: absolute;
+        width: 978px;
+        height: 976px;
+        left: -300.71px;
+        top: -500.84px;
+        opacity: 1;
+        
+    }
+
+    .bot-pic {
+        position: absolute;
+        width: 978px;
+        height: 976px;
+        left: 640.29px;
+        top: 370.84px;
+        opacity: 1;
+        
+    }
+}
