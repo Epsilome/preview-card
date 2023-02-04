@@ -113,6 +113,7 @@ body {
 
 p {
     color: hsl(0, 0%, 59%);
+    font-weight: 400;
 
 }
 
@@ -192,4 +193,8 @@ hr {
         opacity: 1;
         
     }
+}
+
+h3{
+    font-weight: 700;
 }
